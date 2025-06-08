@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Spring Boot Mail</title>
+    <style>
+        body {
+          margin: 0;
+          padding: 0;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #e8f5e9;
+        }
+
+        .container {
+          max-width: 600px;
+          margin: 30px auto;
+          background-color: #ffffff;
+          border-radius: 12px;
+          overflow: hidden;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+          background-color: #3a3b9c;
+          color: white;
+          text-align: center;
+          padding: 30px 20px 20px;
+        }
+
+        .header img {
+          width: 80px;
+          margin-bottom: 10px;
+        }
+
+        .header h1 {
+          margin: 10px 0 5px;
+          font-size: 24px;
+        }
+
+        .badge {
+          display: inline-block;
+          padding: 4px 10px;
+          background-color: #2e7d32;
+          color: #fff;
+          font-size: 12px;
+          border-radius: 20px;
+          margin-top: 10px;
+        }
+
+        .content {
+          padding: 30px;
+          font-size: 16px;
+          color: #333;
+          line-height: 1.6;
+        }
+
+        .content .btn {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 12px 20px;
+          background-color: #3a3b9c;
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 6px;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+        }
+
+        .content .btn:hover {
+          background-color: #2e7d32;
+        }
+
+        .attachments {
+          margin-top: 30px;
+          padding: 15px;
+          background-color: #f1f8e9;
+          border-left: 4px solid #81c784;
+        }
+
+        .footer {
+          text-align: center;
+          font-size: 12px;
+          color: #888;
+          padding: 20px;
+          background-color: #f9f9f9;
+        }
+
+        @media screen and (max-width: 600px) {
+          .content, .header {
+            padding: 20px;
+          }
+
+          .header h1 {
+            font-size: 20px;
+          }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="cid:logoImage" alt="Spring Boot Logo" />
+        <h1>You've Got Mail from Spring Boot!</h1>
+        <div class="badge">Sent via Spring Boot</div>
+    </div>
+    <div class="content">
+        <p>Hi there 👋,</p>
+        <p>This email was sent using <strong>Spring Boot's JavaMailSender</strong> API, demonstrating how easy and powerful it is to send styled HTML messages and attachments.</p>
+        <div class="attachments">
+            📎 <strong>Attachments:</strong> <br />
+            ✅ SpringBoot.png <br />
+            ✅ Terms & Conditions Template.pdf
+        </div>
+        <a href="https://spring.io/projects/spring-boot" class="btn">Learn More About Spring Boot</a>
+    </div>
+    <div class="footer">
+        &copy; 2025 Spring Boot Mail Service • All rights reserved.
+    </div>
+</div>
+</body>
+</html>
